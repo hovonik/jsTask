@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#popupBg{
+				display: none;
+				justify-content: center;
+				width: 100%;
+    			top: 0;
+    			height: 100%;
+    			position: absolute;
+    			z-index: 999;
+			}
+			.popup{
+				display: flex;
+    			flex-direction: column;
+    			background-color: #F00;
+    			height: 92px;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick='getRandomDigit()'>Run</button>
+		<div id="popupBg">
+			<div class="popup">
+				<p>The array is empty</p>
+				<button onclick='closeWindow()'>Cancel</button>
+				<button onclick='resetData()'>Retry</button>
+			</div>
+		</div>
+		<script src="./script.js" type="text/javascript"></script>
+	</body>
+</html>
